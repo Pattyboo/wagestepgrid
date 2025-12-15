@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wage Calculator</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .box {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      margin-top: 15px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input {
+      padding: 8px;
+      width: 100%;
+      max-width: 300px;
+      margin-top: 5px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    th {
+      background: #f2f2f2;
+    }
+    .note {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Wage Calculator</h1>
+<p class="note">Enter your current pay and years of service. This is an estimate.</p>
+
+<div class="box">
+  <label>Current hourly pay</label>
+  <input id="currentPay" type="number" step="0.001" placeholder="Example: 74.72">
+
+  <label>Years of service (2025)</label>
+  <input id="years" type="number" step="1" placeholder="Example: 10">
+</div>
+
+<div class="box">
+  <p><strong>Grid step:</strong> <span id="step">—</span></p>
+  <p><strong>Inexp base rate (calculated):</strong> <
